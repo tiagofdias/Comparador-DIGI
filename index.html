@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Comparador DIGI</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="icon" href="/assets/img/D.png">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form-image" id="elon">
+            <img src="assets/img//DIGI.png" alt="">
+        </div>
+        <div class="form" id="formulario">
+            <div>
+                <div class="form-image">
+                    <img src="assets/img//DIGILOGO.png" alt="">
+                </div>
+                <div class="form-header">
+                    <div class="title">
+                        <h1 id="resultado"><b>Veja se é vantajoso para si mudar para a DIGI Portugal.
+                                #MesmoSemTruques.</b></h1>
+                    </div>
+                </div>
+
+                <div class="formulario">
+                    <h5><b>1 - Plano Atual (o plano da operadora que têm neste momento ao qual está ou não
+                            fidelizado)</b>
+                    </h5>
+                    <div class="input-group-container">
+
+                        <div class="input-group">
+                            <input id="mensalidadeatual" required type="number" step="0.01" min="0"
+                                name="mensalidadeatual" autocomplete="off" class="input" pattern="^\d+(\.\d{1,2})?$">
+                            <label for="mensalidadeatual" class="user-label">Mensalidade Atual (€)</label>
+                        </div>
+
+                        <div class="input-group">
+                            <input id="mesesrestantes" required type="number" step="1" min="0" name="mesesrestantes"
+                                autocomplete="off" class="input">
+                            <label for="mesesrestantes" class="user-label"> Meses Restantes do Contrato</label>
+                        </div>
+
+                        <div class="input-group">
+                            <input id="penalizacao" required type="number" step="0.01" min="0" name="penalizacao"
+                                autocomplete="off" class="input" pattern="^\d+(\.\d{1,2})?$">
+
+                            <label for="penalizacao" class="user-label"> Penalização pela Rescisão (€)</label>
+                        </div>
+
+                    </div>
+                    <br>
+                    <h5><b>2 - Novo Plano DIGI (caso ainda não tenha escolhido o seu plano <a
+                                href="https://www.digi.pt/" class="digi-link">clique aqui</a>)</b></h5>
+
+                    <div class="input-group-container">
+                        <div class="input-group">
+                            <input id="novamensalidade" required type="number" name="mensalidadeatual"
+                                autocomplete="off" class="input" step="0.01" min="0" pattern="^\d+(\.\d{1,2})?$">
+                            <label for="novamensalidade" class="user-label">Nova Mensalidade (€)</label>
+                        </div>
+                    </div>
+
+                    <div class="continue-button" id="comparar-btn">
+                        <button><a href="#"><b>Comparar</b></a> </button>
+                    </div>
+
+                </div>
+                </form>
+
+                <div class="continue-button" id="return-btn" style="display: none; width:92%">
+                    <a href="index.html" style="color: white;"><button><b>Efetuar nova comparação</b></button></a>
+                    <a href="https://www.digi.pt/" style="color: white;"><button><b>Visite a DIGI
+                                Portugal</b></button></a>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

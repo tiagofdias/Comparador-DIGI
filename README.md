@@ -15,4 +15,4 @@ A comparison tool to help Portuguese consumers calculate potential savings when 
 - Developed using HTML, CSS, and JavaScript
 
 **Link**
-Access the tool:
+Access the website: https://tiagofdias.github.io/Comparador-DIGI/
